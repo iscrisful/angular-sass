@@ -1,0 +1,44 @@
+<nav>
+  <a href="#" class="brand">CC</a>
+</nav><br>
+<div class="containerone">
+
+  <h3>Que lenguaje prefiere?</h3>
+  <input type="radio" name="lenguaje1" (click)="opcion = 'Java'" id="radio01"><label for="radio01"><span></span> Java</label><br>
+  <input type="radio" name="lenguaje" (click)="opcion = 'C#'" id="radio02"><label for="radio02"><span></span> C#</label><br>
+  <input type="radio" name="lenguaje" (click)="opcion = 'javascript'" id="radio03"><label for="radio03"><span></span> javascript</label><br>
+  <input type="radio" name="lenguaje" (click)="opcion = 'Otro'" id="radio04"><label for="radio04"><span></span> Otro</label><br>
+
+  <div [ngSwitch]="opcion">
+    <div *ngSwitchCase="'Java'">
+      {{ opcion }} es su lenguaje de preferencia.
+    </div>
+    <div *ngSwitchCase="'C#'">
+      {{ opcion }} es su lenguaje de preferencia.
+    </div>
+    <div *ngSwitchCase="'javascript'">
+      {{ opcion }} es su lenguaje de preferencia.
+    </div>
+    <div *ngSwitchCase="'Otro'">
+      ¿Eliga lenguaje o framework? <input type="text" [(ngModel)]="otrol">
+      {{ otrol }} prefiere en sus proyectos.
+    </div>
+    <div *ngSwitchDefault="">
+      Eliga una opcion
+    </div>
+  </div>
+</div><br>
+<div class="containertwo">
+  <h1>Lenguajes, Librerias y Frameworks</h1>
+  <div>
+    <ul>
+      <li *ngFor="let item of tolls">
+        {{ item.id }} - {{ item.nombre }}
+        <button (click)="Eliminar(item)">Eliminar</button>
+      </li>
+    </ul>
+  </div>
+  <input type="text" #nuevo>
+  <button (click)="Agregar(nuevo)">Agregar</button><br>
+</div>
+

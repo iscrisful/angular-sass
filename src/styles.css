@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #b2babb; }
+  body .containerone {
+    width: 600px;
+    margin: 0 auto; }
+  body .containertwo {
+    width: 500px;
+    margin: 0 auto; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,55 @@
+nav {
+  padding: 20px;
+  background: #1c2833;
+  width: 93%;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 3px;
+  border-bottom: 3px solid;
+  border-color: #00bcd4; }
+  nav .brand {
+    text-decoration: none;
+    padding: 10px;
+    width: 150px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 48px;
+    font-family: Calibri;
+    font-weight: bold;
+    text-align: center;
+    color: gray; }
+
+.colortexto {
+  color: blue; }
+
+input[type=radio] {
+  display: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+input[type=radio] + label {
+  font-family: Arial, Calibri; }
+
+input[type=radio] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #1f618d;
+  margin: 4px 0 0;
+  margin-top: 1px\9;
+  line-height: normal;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+input[type=radio]:checked + label span {
+  background-color: #039be5; }
+
+input[type=radio]:checked + label span {
+  -webkit-transition: background-color 0.4s;
+  -moz-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear; }
+
+/*# sourceMappingURL=app.component.css.map */
